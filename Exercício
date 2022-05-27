@@ -1,0 +1,19 @@
+//Construa um programa em C ANSI que leia dez números inteiros e imprima em tela a multiplicação dos números.
+ //(use while para resolução deste problema)
+ 
+ #include <stdio.h>
+ #include <stdlib.h>
+ int main(void){
+//variaveis
+int i=1, numero, mult=1;
+//entrada
+ 	while(i<=10){
+		printf("Digite um numero:\n");
+			scanf("%i",& numero);
+				fflush(stdin);
+					i++;
+	mult*=numero;
+}
+		printf("multiplicacao:%i\n", mult);
+return 0;
+ } 
