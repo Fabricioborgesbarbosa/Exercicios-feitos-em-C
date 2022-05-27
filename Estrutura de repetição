@@ -1,0 +1,29 @@
+//Faça um programa que gere a tabuada de 1 a 10 de qualquer número.
+ //O usuário deve informar de qual número deseja ver a tabuada.
+ 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void){
+//variaveis
+int i, tabuada;
+char op;
+
+//entrada
+	do{
+		system("cls");
+
+	printf("informe o numero:\n");
+		scanf("%i", & tabuada);
+			fflush(stdin);
+for(i=1; i<=10; i++){
+	printf("%i*%i=%i\n",i, tabuada, i*tabuada); 
+}
+	printf("deseja outra tabuada? S/N\n");
+		scanf("%c", & op);
+			fflush(stdin);
+}while(op=='s');
+	
+	
+	return 0;
+}
